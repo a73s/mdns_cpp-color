@@ -27,7 +27,7 @@ class LogMessage {
 
   template <typename T>
   LogMessage& operator<<(const T& t) {
-    os << t;
+    os << "\u001b[33m" << t << "\u001b[0m";
     return *this;
   }
 
